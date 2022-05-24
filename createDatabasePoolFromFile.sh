@@ -29,8 +29,6 @@ db_passwd= # add mssql user password here
 printf "This is a simple script to automate db creation in 1cv8.\n"
 printf "***ADD YOUR PARAMETERS BEFORE USING IT***\n\n"
 
-cd $platform_path
-
 while read dbname; do 
     database_name=$dbname
 
@@ -49,5 +47,6 @@ while read dbname; do
         --locale=RU \
         --descr=$db_description \
         --date-offset=2000 \
-    printf "/n/n"
+    
 done <$1
+printf "/n/n"

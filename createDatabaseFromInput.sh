@@ -33,8 +33,6 @@ printf "Enter DB name (will be used for IB && DB):\n\n"
 
 read database_name
 
-cd $platform_path
-
     printf "\nv8 base will be called $database_name\n"
     printf "mssql db will be called $database_name\n\n"
 
