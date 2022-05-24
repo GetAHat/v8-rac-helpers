@@ -37,7 +37,6 @@ read database_name
     printf "\nv8 base will be called $database_name\n"
     printf "mssql db will be called $database_name\n\n"
 
-    #$rac cluster $ras_addr list 
     $rac infobase $ras_addr --cluster=$clusterid create \
         --create-database \
         --name=$database_name \
