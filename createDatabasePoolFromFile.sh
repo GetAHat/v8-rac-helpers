@@ -17,7 +17,6 @@ clusterid= # add cluster id here
 platform_path=/opt/1C/v8.3/x86_64
 db_server= # add db server addr here. If it doesn't use standart port, you can specify it with "127.0.0.1 port=1433"
 ras_addr= # add ras server to connect to like this: 127.0.0.1:1545
-db_type=MSSQLServer
 cluster_user= # add cluster admin username here
 cluster_passwd= # add cluster admin password here
 
@@ -26,7 +25,7 @@ cluster_passwd= # add cluster admin password here
 # Auth data for mssql
 db_user= # add mssql username here
 db_passwd= # add mssql user password here
-
+db_type=MSSQLServer
 db_description="CreatedWithScript" # you can provide any description you like. Mind the spaces. Or rather lack of.
 
 db_list=$1
@@ -43,7 +42,7 @@ while read database_name; do
 
     $rac infobase $ras_addr --cluster=$clusterid \ 
     # --cluster-user=$cluster_user \ #
-                                     #  << uncomment this for cluster auth
+                                     #  << uncomment those for cluster auth
     #--cluster-pwd=$cluster_passwd \ # 
     create \
         --create-database \
