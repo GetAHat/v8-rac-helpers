@@ -19,12 +19,14 @@ db_server= # add db server addr here. If it doesn't use standart port, you can s
 ras_addr= # add ras server to connect to like this: 127.0.0.1:1545
 db_list=$1
 
-rac=$platform_path/rac
-db_description="CreatedWithScript"
-
 # Auth data for mssql
 db_user= # add mssql username here
 db_passwd= # add mssql user password here
+
+db_description="CreatedWithScript" # you can provide any description you like. Mind the spaces. Or rather lack of.
+
+rac=$platform_path/rac
+
 
 printf "This is a simple script to automate db creation in 1cv8.\n"
 printf "***ADD YOUR PARAMETERS BEFORE USING IT***\n\n"
