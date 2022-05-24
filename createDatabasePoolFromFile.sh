@@ -2,7 +2,7 @@
 ##### Andrey Fomin <andref@rarus.ru>
 #####
 ##### This script is intended to be started from any directory.
-##### However, you should specify v8 platform path from where RAC client should be started.
+##### However, you should specify v8 platform path from where RAC client will be be started.
 #####
 ##### It's usually /opt/1C/v8.3/x86_64/ for 8.3.17 and older
 ##### and /opt/1cv8/x86_64/8.3.x.x/ for 8.3.18 and newer.
