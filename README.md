@@ -2,6 +2,8 @@
 
 Несколько простых скриптов для облегчения жизни тем, кто работает с rac\ras под Linux.
 
+- [createDatabaseFromInput.sh](https://github.com/GetAHat/v8-rac-helpers#createdatabasefrominputsh)
+
 Для работы клиента администрирования необходим запущенный сервер ras, подключенный к серверу платформы.
 Для этого:
 
