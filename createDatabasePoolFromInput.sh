@@ -7,7 +7,7 @@
 ##### It's usually /opt/1C/v8.3/x86_64/ for 8.3.17 and older
 ##### and /opt/1cv8/x86_64/8.3.x.x/ for 8.3.18 and newer.
 #####
-##### You are permitted to freely copy, modify and redistribute this script or its parts 
+##### You are permitted to copy, modify and redistribute this script or its parts freely
 ##### but please keep this credit message.
 #####################################
 
