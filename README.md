@@ -3,6 +3,7 @@
 Несколько простых скриптов для облегчения жизни тем, кто работает с rac\ras под Linux.
 
 - [createDatabaseFromInput.sh](https://github.com/GetAHat/v8-rac-helpers#createdatabasefrominputsh)
+- [createDatabasePoolFromFile.sh](https://github.com/GetAHat/v8-rac-helpers#createdatabasepoolfromfilesh)
 
 Для работы клиента администрирования необходим запущенный сервер ras, подключенный к серверу платформы.
 Для этого:
@@ -27,4 +28,18 @@
 
 ```bash
 infobase:   xxx-xxx-xxx-xxx...
+```
+
+## createDatabasePoolFromFile.sh
+
+То же, что и для предыдущего, за исключением того, что этот скрипт принимает в качестве ввода файл со списком баз, которые нужно создать.
+```bash
+./createDatabasePoolFromFile.sh /home/$USER/dblist.txt
+```
+
+Сам файл должен представлять из себя простой список с именами баз, например:
+```
+DataBaseName1
+DataBaseName2
+DataBaseNameN
 ```
